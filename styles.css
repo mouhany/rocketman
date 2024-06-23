@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --maintransition: all 0.5s linear;
+  --orange: #eaaa47;
+}
+
+/* BACKGROUNDS */
+.BGnoise {
+  background: rgba(0, 0, 0, 0.25) url(data:image/png;base64,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);
+  z-index: 1;
+}
+
+.BGorange {
+  background-color: var(--orange);
+  z-index: -1;
+}
+
+.BGimage {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1567416661576-659c4298a2c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.BGgrayT {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.BGblack {
+  background-color: #000;
+  z-index: -1;
+}
+
+
+/* ETC */
+a:hover,
+a:active {
+  transition: var(--maintransition);
+}
